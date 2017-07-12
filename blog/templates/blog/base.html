@@ -5,40 +5,39 @@
     <link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
 </head>
-<body>
+<main>
+    <body>
 
-    <h4 class = 'center-align'>THE LONELY PENGUIN</h4>
-    <h6 class = 'center-align'>A COLLECTION OF EVERYDAY FEELS</h6>
-
-
-    <nav>
-        <div class="nav-wrapper">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Stuff</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    {% block content %}
+        <h4 class = 'center-align'>THE LONELY PENGUIN</h4>
+        <h6 class = 'center-align'>A COLLECTION OF EVERYDAY FEELS</h6>
 
 
-    {% endblock %}
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
-</body>
+        <nav>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Stuff</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        {% block content %}
+
+
+        {% endblock %}
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+    </body>
+</main>
 <footer class="page-footer">
   <div class="footer-copyright">
     <div class="container">
-        © 2017 Copyright Text
-        <img class="responsive-img social-icon right" src="{% static 'img/fb.png'%}">
-        <img class="responsive-img social-icon right" src="{% static 'img/twitter.png'%}">
-        <img class="responsive-img social-icon right" src="{% static 'img/ig.png'%}">
-
-
+        © 2017 Copyright 
+        <a href = "https://www.facebook.com/dominique.mamis" target = "_blank"><img class="responsive-img social-icon right" src="{% static 'img/fb.png'%}"></a>
+        <a href = "https://twitter.com/Nikzteroo" target = "_blank"><img class="responsive-img social-icon right" src="{% static 'img/twitter.png'%}"></a>
+        <a href = "https://www.instagram.com/fluffydommybear/?hl=en" target = "_blank"><img class="responsive-img social-icon right" src="{% static 'img/ig.png'%}"></a>
     </div>
 </div>
 </footer>
